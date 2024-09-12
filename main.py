@@ -16,7 +16,13 @@ def start_game():
     # Find out how many petals are in the flower.
     # *Need to fix error*
     # *Need to provide error message if a string it input*
-    flower_petals = int(input("how many petals are in the flower? "))
+    flower_petals = input("How many petals are in the flower? ")
+
+    if flower_petals.isnumeric():
+        flower_petals = int(flower_petals)
+    else:
+        print("Please use a number...")
+        return start_game()
 
     # Counting the petals
     for petal in range(flower_petals):

@@ -3,4 +3,4 @@ This is the classic "loves me, loves me not" game.
 2. Find out if your true love is really your true love.
 
 *known bugs*
-- If a string is input the program returns ValueError
+- works fine and repeats if you input a sring, but repl shows recursionerror
