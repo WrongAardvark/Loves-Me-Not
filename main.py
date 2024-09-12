@@ -4,6 +4,8 @@
 
 # REMEMBER: 1. first phrase is always "loves me" 2. return a string.
 
+import time
+
 no_love = "loves me not"
 love = "loves me"
 
@@ -31,6 +33,7 @@ def start_game():
         # For 2nd, and all even numbered, petals
         else:
             print(no_love)
+        time.sleep(0.75)
 
 
 start_game()
