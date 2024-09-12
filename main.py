@@ -14,7 +14,7 @@ love = "loves me"
 def start_game():
 
     # Find out how many petals are in the flower.
-    # *Need to fix error later*
+    # *Need to fix error*
     # *Need to provide error message if a string it input*
     flower_petals = int(input("how many petals are in the flower? "))
 
