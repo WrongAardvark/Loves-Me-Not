@@ -1,9 +1,3 @@
-# This project is to replicate the classic "loves me, loves me not" game.
-# Given a certain amount of petals, return "loves me" or "loves me not" in order.
-# The final petal should output "LOVES ME" in all-caps.
-
-# REMEMBER: 1. first phrase is always "loves me" 2. return a string.
-
 import time
 
 no_love = "loves me not"
@@ -14,15 +8,14 @@ love = "loves me"
 def start_game():
 
     # Find out how many petals are in the flower.
-    # *Need to fix error*
-    # *Need to provide error message if a string it input*
-    flower_petals = input("How many petals are in the flower? ")
+    while True:
+        flower_petals = input("How many petals are in the flower? ")
 
-    if flower_petals.isnumeric():
-        flower_petals = int(flower_petals)
-    else:
-        print("Please use a number...")
-        return start_game()
+        if flower_petals.isnumeric():
+            flower_petals = int(flower_petals)
+            break  # Exit the loop once a valid number is entered.
+        else:
+            print("Please use a number...")
 
     # Counting the petals
     for petal in range(flower_petals):
